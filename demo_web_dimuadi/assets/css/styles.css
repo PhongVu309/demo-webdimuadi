@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: sans-serif !important;
+    font-family: Open Sans !important;
 }
 
 :root {
@@ -66,7 +66,7 @@ img.icon-nav {
 }
 
 .top-nav .box-nav {
-    margin-left: 295px;
+    margin-left: 275px;
 }
 
 .top-nav .tn-text {
@@ -84,7 +84,7 @@ img.icon-nav {
 }
 
 .box-header {
-    width: 992px;
+    width: auto;
     height: 60px;
     padding: 6px 0;
     background-color: #44BD32;
@@ -143,8 +143,8 @@ img.icon-nav {
 }
 /* banner-top */
 .box-banner {
-    display: flex;
-    flex-wrap: wrap; /* Đảm bảo nội dung không bị tràn */
+    /* display: flex; */
+    flex-wrap: wrap; 
 }
 
 .box-banner .banner-top img {
@@ -162,15 +162,19 @@ img.icon-nav {
 
 /* category */
 .box-category {
-    width: 992px;
-    height: 116px;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.box-category .list-catagory {
+    width: 100%;
 }
 
 .box-category .all-category {
     justify-content: center;
     list-style: none; /* Loại bỏ dấu đầu dòng của danh sách */
     padding: 16px 16px 0 16px;
-    margin: 0;
     display: flex; /* Nếu muốn các mục nằm ngang, dùng flexbox */
     flex-wrap: wrap; /* Cho phép các mục xuống hàng */
     gap: 16px; /* Khoảng cách giữa các mục */
@@ -241,6 +245,7 @@ img.icon-nav {
 }
 
 .item-product-discount .item-dproduct {
+    padding: 16px;
     background-color: #fff;
     display: flex;
     border-radius: 6px;
@@ -254,7 +259,7 @@ img.icon-nav {
 
 .item-dproduct .box-price {
     gap: 4px;
-    padding: 16px;
+    padding: 16px 16px 0 16px;
 }
 /* end discount product */
 
@@ -360,20 +365,100 @@ img.icon-nav {
 }
 
 .suggestion-products .list-products {
-    padding: 16px;
+    margin: 0 !important;
+    padding: 16px 16px 0 16px;
     gap: 15px;
 }
 
 .list-products .l-products {
     border: #E5EBED solid 1px;
     border-radius: 6px;
-    padding: 16px;
     gap: 10px;
 }
+
+.list-products .l-products > img {
+    padding:  16px 0;  
+}
+
+.l-products .rating-star {
+    padding: 4.14px 6.62px 4.14px 0px;
+    gap: 8.28px;
+}
+
+.box-price .money-discount {
+    color: #DA4F25;
+    font-size: 16.55px;
+    font-weight: 700;
+    line-height: 24.83px;   
+}
+
 /* footer */
 .footer{
-    width: 992px;
-    height: 500px;
+    padding-top: 16px;
     background-color: #E5EBED;
+}
+
+.about-me .support-cus {
+    background-color: #DCE3EC;
+    padding: 40px 16px 20px 16px;
+    gap: 10px;
+}
+
+.support-cus .header-network h6,
+.support-cus .text-header h6 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.support-cus .header-network h6 {
+    padding-bottom: 5px;
+}
+
+.support-cus .icon-network ul,
+.support-cus .text-description ul {
+    padding: 0;
+    list-style: none;
+}
+
+.support-cus .icon-network li,
+.support-cus .text-description li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.icon-network .dowload li {
+    padding: 0px 0px 10px 0px;
+    gap: 10px;
+}
+
+.icon-network .back-top {
+    margin: -40px 0 0 0;
+    /* margin-right: 15px; */
+    float: inline-end;
+}
+
+.icon-network .back-top li {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    left: 0;
+}
+
+.footer .contact {
+    padding: 20px 0px 20px 0px;
+    background-color: #687481;
+    color: #FFFFFFF5;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.footer .contact span {
+    font-weight: 700;
 }
 /* end footer */
