@@ -53,6 +53,11 @@
 
 
 /* header */
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .top-nav {
     height: 36px;
     text-align: right;
@@ -139,6 +144,8 @@ img.icon-nav {
 
 /* content */
 .content {
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #E5EBED;
 }
 /* banner-top */
