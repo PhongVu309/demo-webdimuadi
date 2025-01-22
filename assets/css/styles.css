@@ -57,7 +57,7 @@
     margin: 0 auto;
 }
 
-.top-nav {
+.top-header {
     height: 36px;
     text-align: right;
     background-color: #E5EBED;
@@ -65,14 +65,14 @@
     overflow: hidden;
 }
 
-img.icon-nav {
+img.icon-header {
     margin-right: 8px;
 }
 
-.top-nav .box-nav {
+.top-header .box-header {
     display: inline-block;
 }
-.top-nav .tn-text {
+.top-header .tn-text {
     font-size: 13px;
     font-weight: 400;
     line-height: 19px;
@@ -82,34 +82,37 @@ img.icon-nav {
     list-style-position: inside;
 }
 
-.top-nav .tn-text-1 {
+.top-header .tn-text-1 {
     list-style-type: none;
 }
+/* end header */
 
-.box-header {
+/* content */
+.content .group-nav {
+    padding: 0;
+ }
+
+.box-nav {
     width: auto;
     height: 60px;
-    padding: 6px 0;
+    padding: 0;
+    gap: 10px;
     background-color: #44BD32;
     text-align: center;
 }
 
-.box-header .menu-li {
+.box-nav .menu-li {
     padding: 0 12px 0 14px;
 }
 
-.box-header .logo {
-    padding: 0 15px 0 0;
-}
-
-.group-search {
+/* .group-search {
     display: inline-block;
-}
+} */
 
 .search-container {
     position: relative;
     height: 36px;
-    width: 580px;
+   max-width: 580px;
 }
 
 .search-container .input-search {
@@ -130,17 +133,19 @@ img.icon-nav {
     cursor: pointer;
 }
 
+.search-mb{
+    display: none;
+}
+
 .search-container .search img {
     width: 20px;
     height: 20px;
 }
 
-.box-header .icon-nav {
-    padding: 16px 16px;
+.box-nav .icon-user {
+    padding: 0 16px;
 }
-/* end header */
 
-/* content */
 .content {
     max-width: 1200px;
     margin: 0 auto;
@@ -236,7 +241,7 @@ img.icon-nav {
     margin-left: 16px;
 }
 
-.container-fluid.product-discount {
+.container-fluid .product-discount {
     display: flex;
     flex-direction: column;
 }
@@ -339,7 +344,7 @@ img.icon-nav {
 /* best-seller */
 .content .item-bestseller {
     margin-top: 16px;
-    background-image: url(/demo_web_dimuadi/assets/img/content/best-seller/bg-best-seller.jpg);
+    background-image: url(/dimuadi/assets/img/content/best-seller/bg-best-seller.jpg);
 }
 /* end best-seller */
 
