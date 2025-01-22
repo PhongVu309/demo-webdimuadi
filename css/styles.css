@@ -38,7 +38,7 @@
     line-height: 20px;
 }
 
-.text-discount p {
+.group-discount p {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -54,7 +54,6 @@
 
 /* header */
 .header {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -71,9 +70,8 @@ img.icon-nav {
 }
 
 .top-nav .box-nav {
-    margin-left: 275px;
+    display: inline-block;
 }
-
 .top-nav .tn-text {
     font-size: 13px;
     font-weight: 400;
@@ -180,9 +178,9 @@ img.icon-nav {
 
 .box-category .all-category {
     justify-content: center;
-    list-style: none; /* Loại bỏ dấu đầu dòng của danh sách */
+    list-style: none;
     padding: 16px 16px 0 16px;
-    display: flex; /* Nếu muốn các mục nằm ngang, dùng flexbox */
+    display: flex;
     flex-wrap: wrap; /* Cho phép các mục xuống hàng */
     gap: 16px; /* Khoảng cách giữa các mục */
     background-color: #fff;
@@ -202,9 +200,9 @@ img.icon-nav {
 
 .box-category .category img {
     display: block;
-    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước mục */
+    max-width: 100%; 
     height: auto;
-    margin-bottom: 5px; /* Khoảng cách giữa ảnh và chữ */
+    margin-bottom: 5px; 
 }
 /* end catagory */
 
@@ -214,19 +212,19 @@ img.icon-nav {
     display: block;
 }
 
-.text-discount {
+.group-discount {
     padding: 16px;
     margin: 0;
-    display: flex; /* Sử dụng flexbox */
+    display: flex;
     justify-content: space-between; /* Đẩy hai phần tử sang hai bên */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    align-items: center;
 }
 
-.discount-code .text-discount p {
+.discount-code .group-discount p {
     margin-left: 10px;
 }
 
-.product-discount .text-discount p {
+.product-discount .group-discount p {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -234,7 +232,7 @@ img.icon-nav {
     margin: 0;
 }
 
-.text-discount img {
+.group-discount img {
     margin-left: 16px;
 }
 
@@ -260,7 +258,7 @@ img.icon-nav {
 }
 
 .item-product-discount .item-dproduct img {
-    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng phần tử */
+    max-width: 100%;
     height: auto;
 }
 
@@ -350,7 +348,7 @@ img.icon-nav {
     padding: 0;
 }
 
-.top-brand .text-discount {
+.top-brand .group-discount {
     background-color: #fff;
 }
 
