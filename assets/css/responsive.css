@@ -1,7 +1,8 @@
 @media (max-width: 991px){
     .header .top-header,
     .box-nav .T-logo,
-    .box-nav .search-container { 
+    .box-nav .search-container,
+    .install-app { 
         display: none;
     }
 
@@ -62,5 +63,8 @@
         justify-content: unset;
     }
 
+    .group-Dproducts .list-Dproducts {
+        margin: 8px 0 8px 0;
+    }
 }
 
