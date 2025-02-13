@@ -144,6 +144,8 @@ img.icon-header {
 
 .box-nav .icon-user {
     padding: 0 16px;
+    background-color: #44BD32;
+    border: 0;
 }
 
 .content {
@@ -201,6 +203,7 @@ img.icon-header {
     font-size: 12px;
     line-height: 18px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .box-category .category img {
@@ -260,6 +263,7 @@ img.icon-header {
     display: flex;
     border-radius: 6px;
     flex-direction: column; /* Đặt ảnh và chữ theo chiều dọc */
+    cursor: pointer;
 }
 
 .item-product-discount .item-dproduct img {
@@ -384,6 +388,7 @@ img.icon-header {
     border: #E5EBED solid 1px;
     border-radius: 6px;
     gap: 10px;
+    cursor: pointer;
 }
 
 .list-products .l-products > img {
@@ -472,3 +477,68 @@ img.icon-header {
     font-weight: 700;
 }
 /* end footer */
+
+/* modal login */
+.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container .Mcontentlogin {
+    width: 500px;
+    min-height: 300px;
+    border-radius: 10px;
+    animation: modalFadeIn ease .5s;
+}
+
+@keyframes modalFadeIn{
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+.Mcontentlogin .Mheaderlogin {
+    border-bottom: 0.5px solid #dee2e6;
+}
+
+.Mcontentlogin .Mbodylogin {
+    font-size: 14px;
+}
+
+.Mbodylogin .btn-Mlogin {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 8px 0;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+}
+
+.Mbodylogin .btn-Mlogin:hover {
+    background-color: #0097E6;
+    color: #fff;
+}
+
+.Mcontentlogin .Mfooterlogin {
+    border: 0;
+    font-size: 14px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.Mfooterlogin p {
+    color: var(--custom-color);
+}
+.Mfooterlogin p > span {
+    color: #44BD32;
+}
