@@ -43,7 +43,20 @@
         <div class="content">
             <nav class="navbar sticky-top navbar-light bg-light group-nav">
                 <div class="container-fluid box-nav">
-                        <a class="menu-li" href="#"><img src="assets/img/nav/menu.png" alt=""> </a>
+                    <nav class="navbar navbar-dark">
+                        <div class="container-fluid">
+                            <button class="btn btn-primary btn-hamburger-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                    
+                    <div class="offcanvas offcanvas-start text-bg-dark" id="offcanvasMenu">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Menu</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                    </div>
                         <a class="logo" href="#"><img src="assets/img/nav/H-Logo.png" alt=""></a>
                         <a class="T-logo" href=""><img src="assets/img/nav/Group.png" alt=""></a>
                         <div class="search-container">
@@ -157,7 +170,7 @@
                 <div class="container-fuild discount-code" style="background-color: #fff;">
                     <div class="group-discount">
                         <p style="margin-left: 16px;">Mã giảm giá</p> 
-                        <img src="assets/img/content/discount-code/icon-more.png" alt="" class="more-dproduct">
+                        <a href="coupon.html"><img src="assets/img/content/discount-code/icon-more.png" alt="" class="more-dproduct"></a>
                     </div>
 
                     <div class="row scoll discount-list">

@@ -66,5 +66,39 @@
     .group-Dproducts .list-Dproducts {
         margin: 8px 0 8px 0;
     }
+
+    /* pagination */
+
+    /* end pagination */
+}
+
+@media (max-width: 576px) {
+    .img-pagination, .page-item {
+        display: none;
+    }
+
+    .pagination-info {
+        display: block;
+    }
+
+    .group-pagination {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .pagination-page {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-pagination {
+        margin: 0 0 0 48px !important;
+        padding: 6px 12px;
+    }
+
+   .btn-pagination1 {
+        margin: 0 !important;
+    }
 }
 

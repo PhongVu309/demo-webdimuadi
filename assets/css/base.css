@@ -109,6 +109,15 @@ img.icon-header {
     background-color: #E5EBED;
 }
 
+.content .btn-hamburger-menu {
+    background-color: #44BD32;
+    border: 0;
+}
+
+.content .btn-hamburger-menu:hover {
+    background-color: #687481;
+}
+
 .content .group-nav {
     padding: 0;
  }
@@ -237,6 +246,63 @@ img.icon-header {
     font-weight: 700;
 }
 /* end footer */
+
+/* pagination */
+.group-pagination {
+    padding-bottom: 8px;
+}
+
+.pagination-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.pagination-page .pagination-link {
+    border: 0;
+    color: #000;
+    background-color: #E5EBED;
+    margin: 0 5px;
+}
+
+.pagination-page .pagination-link:hover{
+    color: #fff;
+    background-color: #44BD32;
+    border-radius: 8px;
+}
+
+.pagination-page li:first-child {
+    margin-right: auto;
+}
+.pagination-page li:last-child {
+    margin-left: auto;
+}
+
+.pagination-page .btn-pagination {
+    margin: 0 47px;
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.pagination-page .btn-pagination:hover {
+    color: #fff;
+    background-color: #44BD32;
+}
+
+.pagination-info {
+    margin-left: 11px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 35px;
+    color: #040404;
+    display: none;
+}
+/* end pagination */
 
 /* modal login */
 .modal-container {
