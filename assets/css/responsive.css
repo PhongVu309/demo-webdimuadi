@@ -10,6 +10,10 @@
         display: block;
     }
 
+    .box-nav .logo {
+        margin-right: auto;
+    }
+
     /* scoll */
     .scoll {
         display: flex;
